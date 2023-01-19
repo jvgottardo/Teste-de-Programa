@@ -1,0 +1,19 @@
+Create database teste;
+use teste;
+ Create table funcionario(
+    id int primary key auto_increment,
+    nome varchar(80) not null,
+    cpf varchar(80),
+   situacao varchar(10),
+    date_cadastro DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+Create table tickets(
+    id_ticket int primary key auto_increment,
+    idFuncionario varchar(80) not null,
+    situacao varchar(80),
+    qtd int,
+    date_cadastro DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
